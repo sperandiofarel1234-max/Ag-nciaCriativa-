@@ -1,0 +1,20 @@
+// Botão básico
+@mixin botao($cor-fundo, $cor-texto) {
+  background-color: $cor-fundo;
+  color: $cor-texto;
+  padding: $espacamento-pequeno $espacamento;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+
+  &:hover {
+    background-color: darken($cor-fundo, 10%);
+  }
+}
+
+// Espaçamento padrão
+@mixin espacamento($top: $espacamento, $bottom: $espacamento) {
+  margin-top: $top;
+  margin-bottom: $bottom;
+}

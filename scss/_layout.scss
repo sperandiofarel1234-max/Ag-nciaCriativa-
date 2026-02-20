@@ -1,0 +1,29 @@
+.header {
+  background-color: $cor-primaria;
+  color: white;
+  padding: $espacamento;
+
+  &__logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  &__nav {
+    ul {
+      list-style: none;
+      display: flex;
+      gap: $espacamento;
+    }
+  }
+}
+
+.main {
+  padding: $espacamento-grande;
+}
+
+.footer {
+  text-align: center;
+  padding: $espacamento;
+  background-color: $cor-secundaria;
+  color: white;
+}

@@ -1,14 +1,12 @@
-/* Reset simples */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@use 'variaveis' as *;
+
+* { margin:0; padding:0; box-sizing:border-box; }
 
 body {
-  font-family: $fonte-principal;
-  font-size: $tamanho-base;
+  font-family: $fonte;
   color: $cor-texto;
-  background-color: $cor-fundo;
+  background: $cor-fundo;
   line-height: 1.6;
 }
+
+h1, h2, h3 { margin-bottom: $espaco-sm; }

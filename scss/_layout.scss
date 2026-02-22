@@ -1,29 +1,16 @@
-.header {
-  background-color: $cor-primaria;
+@use 'variaveis' as *;
+@use 'mixins'   as *;     // ← essa linha resolve o erro
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero {
+  min-height: 90vh;
+  background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('...') center/cover;
   color: white;
-  padding: $espacamento;
-
-  &__logo {
-    font-weight: bold;
-    font-size: 1.5rem;
-  }
-
-  &__nav {
-    ul {
-      list-style: none;
-      display: flex;
-      gap: $espacamento;
-    }
-  }
-}
-
-.main {
-  padding: $espacamento-grande;
-}
-
-.footer {
+  @include flex-center;          // agora funciona
   text-align: center;
-  padding: $espacamento;
-  background-color: $cor-secundaria;
-  color: white;
 }

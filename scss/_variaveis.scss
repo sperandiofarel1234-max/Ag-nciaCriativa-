@@ -1,14 +1,10 @@
-// Cores
-$cor-primaria: #ff5722;
-$cor-secundaria: #333;
-$cor-fundo: #f4f4f4;
-$cor-texto: #222;
+@use 'sass:math';
 
-// Tipografia
-$fonte-principal: 'Roboto', sans-serif;
-$tamanho-base: 16px;
-
-// Espaçamentos
-$espacamento: 20px;
-$espacamento-pequeno: $espacamento / 2;
-$espacamento-grande: $espacamento * 2;
+$cor-primaria: #e74c3c;
+$cor-secundaria: #3498db;
+$cor-texto: #2c3e50;
+$cor-fundo: #f9fbfd;
+$fonte: 'Poppins', sans-serif;
+$espaco: 2rem;
+$espaco-sm: math.div($espaco, 2);
+$radius: 10px;
